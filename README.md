@@ -1,1 +1,0 @@
-# hubspot-chat-app
