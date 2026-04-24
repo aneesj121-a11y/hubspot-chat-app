@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Restaurant Support Chat",
+    "slug": "hubspot-chat-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#ff7a59"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourcompany.hubspotchat",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Required for sending photos in support chat",
+        "NSPhotoLibraryUsageDescription": "Required for sending attachments in support chat",
+        "NSMicrophoneUsageDescription": "Required for voice messages in support chat"
+      }
+    },
+    "android": {
+      "package": "com.yourcompany.hubspotchat",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "@hubspot/mobile-chat-sdk-react-native",
+        {
+          "portalId": "244508708",
+          "hublet": "na2",
+          "environment": "prod",
+          "defaultChatFlow": "wer3tgyhjiuk"
+        }
+      ]
+    ]
+  }
+}
